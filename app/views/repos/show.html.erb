@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @repo.name %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @repo.size %>
+</p>
+
+<p>
+  <strong>Has readme file:</strong>
+  <%= @repo.has_readme_file %>
+</p>
+
+<%= link_to 'Edit', edit_repo_path(@repo) %> |
+<%= link_to 'Back', repos_path %>
