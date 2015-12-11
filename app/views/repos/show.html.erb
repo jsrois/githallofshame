@@ -11,9 +11,9 @@
 </p>
 
 <p>
-  <strong>Has readme file:</strong>
-  <%= @repo.has_readme_file %>
+  <% if @repo.has_readme_file %>
+    <strong class='good'>Has readme file</strong>
+  <% end %> 
 </p>
 
-<%= link_to 'Edit', edit_repo_path(@repo) %> |
 <%= link_to 'Back', repos_path %>
