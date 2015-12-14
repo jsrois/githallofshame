@@ -28,7 +28,7 @@ class Repo < ActiveRecord::Base
             |s|
             # update size
             size = JSON.parse(make_get_request_to_stash_api(user, pass, "/rest/reposize/latest/projects/" + s[:project_key] + "/repos/" + s[:name]).body)["sizeRaw"].to_f/(MEGABYTE)
-            has_readme = JSON.parse(make_get_request_to_stash_api(user, pass, "/rest/api/1.0/projects/" + s[:project_key] + "/repos/"+s[:name]+"/browse/READM.md?type=true").body).has_key?("type")
+            has_readme = JSON.parse(make_get_request_to_stash_api(user, pass, "/rest/api/1.0/projects/" + s[:project_key] + "/repos/"+s[:name]+"/browse/README.md?type=true").body).has_key?("type")
             repo = Repo.find_or_initialize_by({:name => s[:name]})
             repo.update({:size => size.round(2), :has_readme_file => has_readme })
             repo.save
