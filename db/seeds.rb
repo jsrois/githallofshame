@@ -6,4 +6,5 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-repos = Repo.create([{name: "foo", size: 100},{name: "bar", size: 100}])
+Repo.delete_all
+#repos = Repo.create([{name: "foo", size: 100},{name: "bar", size: 100}])

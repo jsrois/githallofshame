@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class RepoTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+   test "Should not store repos without name" do
+     repo = Repo.new
+     assert_not repo.save
+   end
 end
