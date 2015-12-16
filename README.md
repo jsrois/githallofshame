@@ -1,5 +1,8 @@
 [![Stories in Ready](https://badge.waffle.io/jsrois/githallofshame.png?label=ready&title=Ready)](https://waffle.io/jsrois/githallofshame)
 # git *hall of shame*
+
+![Shame](http://i.imgur.com/FidZknJ.gif)
+
 Playing with Stash RESTful API to detect anomalies or undesired repository usage.
 
 ## Configuration
