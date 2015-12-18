@@ -1,3 +1,5 @@
+
+# this class is pure crap. TODO refactor
 class Repo < ActiveRecord::Base
     validates :name, presence: true
     

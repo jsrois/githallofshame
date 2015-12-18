@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151211172352) do
+ActiveRecord::Schema.define(version: 20151218155319) do
 
   create_table "repos", force: :cascade do |t|
     t.string   "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20151211172352) do
     t.boolean  "has_readme_file"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "project"
   end
 
 end
